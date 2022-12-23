@@ -52,6 +52,11 @@ h1 img{
     width: 100%;
 }
 
+.share a img{
+    width: 150px;
+    cursor: pointer;
+}
+
 @media (max-width: 1024px){
     body{
         background-color: whitesmoke;
