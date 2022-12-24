@@ -4,7 +4,13 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: clashRoyale;
+    src: url(/fonts/You\ Blockhead.ttf);
+}
+
 body{
+    font-family: clashRoyale, 'Courier New', Courier, monospace;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,8 +58,15 @@ h1 img{
     width: 100%;
 }
 
+.share{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
 .share a img{
-    width: 150px;
+    width: 100px;
     cursor: pointer;
 }
 
@@ -80,5 +93,11 @@ h1 img{
         width: 90%;
         margin: 20px 0;
         padding: 10px;
+    }
+}
+
+@media (max-width: 460px){
+    .share{
+        flex-direction: column;
     }
 }
